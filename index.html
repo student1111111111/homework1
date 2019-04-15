@@ -44,7 +44,7 @@
     <script>
         //4
         let age = parseFloat(prompt("Вік дитини: "));
-        let kindergarten = (3 - age);
+        let kindergarten = (3 - age);  Тут дужок не потрібно. Дужки використовуйте тільки тоді, коли треба змінии пріоритет операцій
         let schoolb = (6 - age);
         let schoole = (17 - age);
         let unib = (17 - age);
@@ -60,7 +60,7 @@
     <script>
         //5
         let S = prompt("Скільки заробив сумісник: ")
-        let procents = (S / 100 * 20);
+        let procents = (S / 100 * 20);            Дужки не потрібні
         let factMoney = (S - procents);
         document.write("Фактична платня сумісника: " + factMoney + " грн");
     </script>
@@ -70,7 +70,7 @@
         let a11 = prompt('Значення змінної a');
         let b11 = prompt('Значення змінної b');
         let c11 = prompt('Значення змінної c');
-        let a1 = b11;
+        let a1 = b11;           Ви вводите нові змінні, а треба було змінити початкові
         let b1 = c11;
         let c1 = a11;
         document.write('Змінна а дорівнює: ' + a1 + '; ');
@@ -80,7 +80,7 @@
     </script>
     <hr>
     <script>
-        //7
+        //7                Вставляйте умову перед завданням (поговоримо про завдання)
         let number = prompt('Деяке число: ');
         let main = parseInt(number);
         let fraction = (number - main);
@@ -91,7 +91,7 @@
         //8
         let year = prompt('Введіть рік: ');
         let century;
-        if (1 < year < 101) {
+        if (1 < year < 101) {            Тут можна було обійтися без використання if . Подумайте (треба використати ділення націло)
             century = "1";
         }
         else if (100 < year < 201) {
@@ -161,7 +161,7 @@
     <script>
         //9
         let seconds = prompt('Введіть кількість секунд: ');
-        let hours = parseInt(seconds / 3600);
+        let hours = parseInt(seconds / 3600);           
         let minutes = Math.round(seconds - hours * 3600) / 60;
         document.write('Хвилин з доби пройшло: ' + minutes + '; Годин з доби пройшло: ' + hours + ' .');
     </script>
@@ -177,7 +177,7 @@
     </script>
     <hr>
     <script>
-        //11
+        //11  Тут задача була трохи зворотна. 
         let money1 = prompt('Введіть кількість монет, номіналом 5 копійок: ');
         let money2 = prompt('Введіть кількість монет, номіналом 25 копійок: ');
         let money3 = prompt('Введіть кількість монет, номіналом 50 копійок: ');
@@ -192,7 +192,7 @@
     <script>
         //12
         let days = prompt('Введіть кількість днів: ');
-        let week = parseInt(days / 7);
+        let week = parseInt(days / 7);    Можна було використати Math.floor
         document.write('Кількість повних тижнів: ' + week + '.');
     </script>
     <hr>
@@ -203,7 +203,7 @@
         let dayz2 = (dayz + dayz1);
         //повних тижнів пройшло
         let dayz3 = parseInt(dayz2 / 7);
-        let dayz4 = parseInt(dayz2 - dayz3 * 7);
+        let dayz4 = parseInt(dayz2 - dayz3 * 7);           Ще подумайте. У цьому завданні у усіх наступних можна обійтися без if
         if (dayz4 = 1) {
             document.write("Понеділок");
 
